@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/cats/cat-pic",
+  "sourceRoot": "libs/cats/cat-pic/src",
+  "prefix": "nx-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/cats/cat-pic"],
+      "options": {
+        "jestConfig": "libs/cats/cat-pic/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/cats/cat-pic/src/**/*.ts",
+          "libs/cats/cat-pic/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:cats", "type:feature"]
+}

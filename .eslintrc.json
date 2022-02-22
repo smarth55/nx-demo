@@ -15,6 +15,45 @@
               {
                 "sourceTag": "*",
                 "onlyDependOnLibsWithTags": ["*"]
+              },
+              {
+                "sourceTag": "type:data",
+                "onlyDependOnLibsWithTags": ["type:data"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": [
+                  "type:data",
+                  "type:feature",
+                  "type:ui"
+                ]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui"]
+              },
+              {
+                "sourceTag": "scope:core",
+                "onlyDependOnLibsWithTags": [
+                  "scope:cats",
+                  "scope:core",
+                  "scope:dogs",
+                  "scope:shared"
+                ],
+              },
+              {
+                "sourceTag": "scope:cats",
+                "onlyDependOnLibsWithTags": [
+                  "scope:cats",
+                  "scope:shared"
+                ]
+              },
+              {
+                "sourceTag": "scope:dogs",
+                "onlyDependOnLibsWithTags": [
+                  "scope:dogs",
+                  "scope:shared"
+                ]
               }
             ]
           }

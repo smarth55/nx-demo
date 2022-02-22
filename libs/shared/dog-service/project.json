@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/shared/dog-service",
+  "sourceRoot": "libs/shared/dog-service/src",
+  "prefix": "nx-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/dog-service"],
+      "options": {
+        "jestConfig": "libs/shared/dog-service/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/shared/dog-service/src/**/*.ts",
+          "libs/shared/dog-service/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:shared", "type:data"]
+}

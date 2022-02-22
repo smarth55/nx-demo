@@ -1,0 +1,5 @@
+<nx-demo-button (click)="getDogPic()">
+  Get Random Dog
+</nx-demo-button>
+
+<img *ngIf="picUrl" [src]="picUrl">

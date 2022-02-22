@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/dogs/dog-pic",
+  "sourceRoot": "libs/dogs/dog-pic/src",
+  "prefix": "nx-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/dogs/dog-pic"],
+      "options": {
+        "jestConfig": "libs/dogs/dog-pic/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/dogs/dog-pic/src/**/*.ts",
+          "libs/dogs/dog-pic/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:dogs", "type:feature"]
+}

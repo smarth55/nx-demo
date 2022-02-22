@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/core/shell",
+  "sourceRoot": "libs/core/shell/src",
+  "prefix": "nx-demo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/core/shell"],
+      "options": {
+        "jestConfig": "libs/core/shell/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/core/shell/src/**/*.ts",
+          "libs/core/shell/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:core", "type:feature"]
+}
