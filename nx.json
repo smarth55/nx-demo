@@ -1,7 +1,7 @@
 {
   "npmScope": "nx-demo",
   "affected": {
-    "defaultBase": "master"
+    "defaultBase": "merged-libs"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular",
