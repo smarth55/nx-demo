@@ -1,6 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { SharedDogService } from '@nx-demo/shared/dog-service';
+import { SharedDogService } from '@nx-demo/shared/dog-service/shared-dog.service';
 
 @Component({
   selector: 'nx-demo-dog-pic',

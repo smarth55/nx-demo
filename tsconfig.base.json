@@ -16,12 +16,9 @@
     "baseUrl": ".",
     "paths": {
       "@nx-demo/cats/cat-pic": ["libs/cats/cat-pic/src/index.ts"],
-      "@nx-demo/core/home": ["libs/core/home/src/index.ts"],
-      "@nx-demo/core/shell": ["libs/core/shell/src/index.ts"],
+      "@nx-demo/core/*": ["libs/core/src/lib/*"],
       "@nx-demo/dogs/dog-pic": ["libs/dogs/dog-pic/src/index.ts"],
-      "@nx-demo/shared/button": ["libs/shared/button/src/index.ts"],
-      "@nx-demo/shared/cat-service": ["libs/shared/cat-service/src/index.ts"],
-      "@nx-demo/shared/dog-service": ["libs/shared/dog-service/src/index.ts"]
+      "@nx-demo/shared/*": ["libs/shared/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]

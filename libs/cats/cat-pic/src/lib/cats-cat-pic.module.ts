@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
-import { SharedButtonModule } from '@nx-demo/shared/button';
-import { SharedCatServiceModule } from '@nx-demo/shared/cat-service';
+import { SharedButtonModule } from '@nx-demo/shared/button/shared-button.module';
+import { SharedCatServiceModule } from '@nx-demo/shared/cat-service/shared-cat-service.module';
 
 import { CatPicsComponent } from './cat-pics/cat-pics.component';
 

@@ -2,13 +2,10 @@
   "version": 2,
   "projects": {
     "cats-cat-pic": "libs/cats/cat-pic",
-    "core-home": "libs/core/home",
-    "core-shell": "libs/core/shell",
+    "core": "libs/core",
     "demo": "apps/demo",
     "demo-e2e": "apps/demo-e2e",
     "dogs-dog-pic": "libs/dogs/dog-pic",
-    "shared-button": "libs/shared/button",
-    "shared-cat-service": "libs/shared/cat-service",
-    "shared-dog-service": "libs/shared/dog-service"
+    "shared": "libs/shared"
   }
 }

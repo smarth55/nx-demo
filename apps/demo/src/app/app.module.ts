@@ -11,7 +11,7 @@ import { AppComponent } from './app.component';
     RouterModule.forRoot([
       {
         path: '',
-        loadChildren: () => import('@nx-demo/core/shell').then(m => m.CoreShellModule)
+        loadChildren: () => import('@nx-demo/core/shell/core-shell.module').then(m => m.CoreShellModule)
       }
     ])
   ],
