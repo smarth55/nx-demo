@@ -39,7 +39,7 @@
                   "scope:core",
                   "scope:dogs",
                   "scope:shared"
-                ],
+                ]
               },
               {
                 "sourceTag": "scope:cats",

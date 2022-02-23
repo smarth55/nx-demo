@@ -1,6 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import { SharedCatService } from '@nx-demo/shared/cat-service/shared-cat.service';
+import { PrivateCatService } from '@nx-demo/shared/cat-service/private-cat.service';
 
 @Component({
   selector: 'nx-demo-cat-pics',
@@ -11,7 +12,12 @@ import { SharedCatService } from '@nx-demo/shared/cat-service/shared-cat.service
 export class CatPicsComponent {
   picUrl = '';
 
-  constructor(private cats: SharedCatService) { }
+  constructor(
+    private cats: SharedCatService,
+    private privateCat: PrivateCatService
+  ) {
+    this.privateCat.call();
+  }
 
   getCatPic() {
     this.cats.getRandomCat()
