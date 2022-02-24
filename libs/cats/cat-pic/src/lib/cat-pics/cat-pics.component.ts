@@ -1,7 +1,7 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 
-import { SharedCatService } from '@nx-demo/shared/cat-service/shared-cat.service';
-import { PrivateCatService } from '@nx-demo/shared/cat-service/private-cat.service';
+import { SharedCatService } from '@nx-demo/shared/services/cat-service/shared-cat.service';
+import { PrivateCatService } from '@nx-demo/shared/services/cat-service/private-cat.service';
 
 @Component({
   selector: 'nx-demo-cat-pics',
