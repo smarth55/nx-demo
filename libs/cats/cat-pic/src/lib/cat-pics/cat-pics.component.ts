@@ -2,6 +2,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import { SharedCatService } from '@nx-demo/shared/cat-service';
 
+// this is not exported form the lib
+// import { PrivateCatService } from '@nx-demo/shared/cat-service';
+
 @Component({
   selector: 'nx-demo-cat-pics',
   templateUrl: './cat-pics.component.html',
